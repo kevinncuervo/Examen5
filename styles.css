@@ -481,3 +481,59 @@ img {
   }
 }
 
+/* ===================================
+   BOTON VOLVER ARRIBA - COMMIT 10
+=================================== */
+
+/* Boton flotante */
+.back-to-top {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Icono de flecha */
+.back-to-top__icon {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+/* Efecto al pasar el cursor */
+.back-to-top:hover {
+  background-color: #279eae;
+  transform: translateY(-4px);
+}
+
+/* Accesibilidad con teclado */
+.back-to-top:focus-visible {
+  outline: 3px solid var(--color-dark);
+  outline-offset: 3px;
+}
+
+/* Adaptacion a celulares */
+@media (max-width: 575.98px) {
+  .back-to-top {
+    right: 15px;
+    bottom: 80px;
+    width: 42px;
+    height: 42px;
+  }
+
+  .back-to-top__icon {
+    font-size: 22px;
+  }
+}

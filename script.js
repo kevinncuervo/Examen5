@@ -62,6 +62,19 @@ document.addEventListener("DOMContentLoaded", () => {
     // Boton siguiente
     nextButton.addEventListener("click", () => {
       showSlide(currentSlide + 1);
+    
+  }
+
+  // Boton para volver al inicio
+  const backToTopButton = document.getElementById("backToTop");
+
+  // Verificar que el boton exista
+  if (backToTopButton) {
+    backToTopButton.addEventListener("click", () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
     });
   }
 });
