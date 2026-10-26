@@ -160,3 +160,47 @@ img {
     margin-left: 0;
   }
 }
+
+.hero {
+  width: 100%;
+  min-height: 560px;
+  height: calc(100vh - 83px);
+  background-image: url("Imagen/graduacion.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Contenedor principal */
+.hero__container {
+  height: 100%;
+  padding: 0;
+}
+
+
+.hero__row {
+  height: 100%;
+  margin: 0;
+}
+
+
+.hero__column {
+  height: 100%;
+}
+
+
+@media (max-width: 991.98px) {
+  .hero {
+    height: 600px;
+    background-position: 55% center;
+  }
+}
+
+
+@media (max-width: 575.98px) {
+  .hero {
+    min-height: 500px;
+    height: 500px;
+    background-position: 58% center;
+  }
+}
