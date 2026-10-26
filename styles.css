@@ -721,3 +721,123 @@ img {
     font-size: 14px;
   }
 }
+
+/* ===================================
+   AJUSTES FINALES - COMMIT 12
+=================================== */
+
+/* Desplazamiento suave */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Secciones informativas */
+.info-section {
+  padding: 75px 0;
+  background-color: var(--color-white);
+  scroll-margin-top: 20px;
+}
+
+/* Fondo alternativo */
+.info-section--light {
+  background-color: #eefafc;
+}
+
+/* Titulos de secciones */
+.info-section__title {
+  margin-bottom: 20px;
+  color: var(--color-dark);
+  font-family: "Nunito", Arial, sans-serif;
+  font-size: 36px;
+  font-weight: 800;
+}
+
+/* Descripciones */
+.info-section__text {
+  max-width: 750px;
+  margin-bottom: 30px;
+  color: var(--color-text);
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+/* Tarjetas de cursos */
+.info-section__card {
+  height: 100%;
+  padding: 30px;
+  background-color: var(--color-white);
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Titulos de tarjetas */
+.info-section__card h3 {
+  color: var(--color-primary);
+  font-size: 22px;
+  font-weight: 700;
+}
+
+/* Formulario */
+.info-section__form {
+  max-width: 500px;
+}
+
+/* Boton del formulario */
+.info-section__submit {
+  padding: 14px 35px;
+  border: none;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* Efecto del boton */
+.info-section__submit:hover {
+  background-color: #279eae;
+}
+
+/* Mensaje del formulario */
+.info-section__message {
+  margin-top: 15px;
+  color: var(--color-dark);
+  font-weight: 600;
+}
+
+/* Nota informativa */
+.info-section__note {
+  margin-top: 12px;
+  color: var(--color-text);
+  font-size: 13px;
+}
+
+/* Pantallas pequenas */
+@media (max-width: 575.98px) {
+  .info-section {
+    padding: 45px 20px;
+  }
+
+  .info-section__title {
+    font-size: 28px;
+  }
+
+  .info-section__text {
+    font-size: 16px;
+  }
+
+  .info-section__card {
+    padding: 22px;
+  }
+}
+
+/* Usuarios con movimiento reducido */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .hero__button,
+  .hero__arrow,
+  .back-to-top {
+    transition: none;
+  }
+}

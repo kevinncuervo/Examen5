@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const title = document.querySelector(".hero__title");
   const description = document.querySelector(".hero__description");
 
-  // Botones de navegacion
+  // Botones de navegacion del carrusel
   const previousButton = document.getElementById("previousSlide");
   const nextButton = document.getElementById("nextSlide");
 
@@ -27,22 +27,21 @@ document.addEventListener("DOMContentLoaded", () => {
   // Diapositiva actual
   let currentSlide = 0;
 
-  // Funcion para mostrar diapositivas
+  // Mostrar la diapositiva seleccionada
   function showSlide(index) {
     currentSlide = (index + slides.length) % slides.length;
 
     const slide = slides[currentSlide];
 
-    // Actualizar contenido
     subtitle.textContent = slide.subtitle;
     title.textContent = slide.title;
     description.textContent = slide.description;
 
-    // Cambiar posicion de la imagen
+    // Cambiar la posicion de la imagen
     hero.classList.toggle("hero--alternate", currentSlide === 1);
   }
 
-  // Verificar elementos del carrusel
+  // Verificar los elementos del carrusel
   if (
     hero &&
     subtitle &&
@@ -63,19 +62,32 @@ document.addEventListener("DOMContentLoaded", () => {
     nextButton.addEventListener("click", () => {
       showSlide(currentSlide + 1);
     });
-
   }
 
   // Boton para volver al inicio
   const backToTopButton = document.getElementById("backToTop");
 
-  // Verificar que el boton exista
   if (backToTopButton) {
     backToTopButton.addEventListener("click", () => {
       window.scrollTo({
         top: 0,
         behavior: "smooth"
       });
+    });
+  }
+
+  // Formulario de demostracion
+  const registrationForm = document.getElementById("registrationForm");
+  const registrationMessage = document.getElementById("registrationMessage");
+
+  if (registrationForm && registrationMessage) {
+    registrationForm.addEventListener("submit", (event) => {
+      event.preventDefault();
+
+      registrationMessage.textContent =
+        "Demo completed successfully. No data was saved or sent.";
+
+      registrationForm.reset();
     });
   }
 });
