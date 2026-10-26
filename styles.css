@@ -201,7 +201,11 @@ img {
 
 
 .hero__column {
+  display: flex;
+  align-items: center;
   height: 100%;
+  padding-left: clamp(24px, 9.8vw, 130px);
+  padding-right: 24px;
 }
 
 
@@ -218,5 +222,80 @@ img {
     min-height: 500px;
     height: 500px;
     background-position: 58% center;
+  }
+}
+/* Contenido principal */
+.hero__content {
+  width: 100%;
+  max-width: 750px;
+}
+
+/* Subtitulo principal */
+.hero__subtitle {
+  margin-bottom: 18px;
+  color: var(--color-primary);
+  font-family: "Nunito", Arial, sans-serif;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+/* Titulo principal */
+.hero__title {
+  margin: 0;
+  color: var(--color-white);
+  font-family: "Nunito", Arial, sans-serif;
+  font-size: clamp(42px, 5.6vw, 72px);
+  font-weight: 800;
+  line-height: 1.18;
+}
+
+/* Descripcion principal */
+.hero__description {
+  max-width: 720px;
+  margin: 18px 0 0;
+  color: var(--color-white);
+  font-family: "Nunito", Arial, sans-serif;
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 1.55;
+}
+
+/* Textos para tabletas */
+@media (max-width: 991.98px) {
+  .hero__column {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+
+  .hero__title {
+    font-size: 52px;
+  }
+
+  .hero__description {
+    font-size: 19px;
+  }
+}
+
+/* Textos para celulares */
+@media (max-width: 575.98px) {
+  .hero__column {
+    padding-left: 24px;
+    padding-right: 20px;
+  }
+
+  .hero__subtitle {
+    margin-bottom: 12px;
+    font-size: 16px;
+  }
+
+  .hero__title {
+    font-size: 38px;
+    line-height: 1.15;
+  }
+
+  .hero__description {
+    margin-top: 16px;
+    font-size: 16px;
+    line-height: 1.5;
   }
 }
