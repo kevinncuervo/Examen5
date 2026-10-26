@@ -1,0 +1,27 @@
+
+/* Variables generales */
+:root {
+  --color-primary: #36b7c6;
+  --color-dark: #181d38;
+  --color-white: #ffffff;
+  --color-text: #52565b;
+}
+
+/* Estilos generales */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: var(--color-text);
+  background-color: var(--color-white);
+}
+
+/* Configuracion de imagenes */
+img {
+  max-width: 100%;
+  height: auto;
+}
