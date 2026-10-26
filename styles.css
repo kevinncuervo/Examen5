@@ -1,4 +1,5 @@
 
+
 /* Variables generales */
 :root {
   --color-primary: #36b7c6;
@@ -26,6 +27,11 @@ img {
   height: auto;
 }
 
+/* ===================================
+   BARRA DE NAVEGACION
+=================================== */
+
+/* Barra principal */
 .nav-site {
   min-height: 83px;
   padding: 0;
@@ -34,12 +40,10 @@ img {
   z-index: 10;
 }
 
-
+/* Contenedor de navegacion */
 .nav-site__container {
   padding: 0;
 }
-
-
 
 /* Nombre y logotipo */
 .nav-site__brand {
@@ -58,6 +62,7 @@ img {
   width: 38px;
   height: 42px;
   flex-shrink: 0;
+  object-fit: contain;
 }
 
 /* Texto del logotipo */
@@ -69,7 +74,7 @@ img {
   color: var(--color-primary);
 }
 
-
+/* Opciones de navegacion */
 .nav-site__link {
   padding: 29px 14px !important;
   color: var(--color-dark);
@@ -78,7 +83,7 @@ img {
   transition: color 0.3s;
 }
 
-
+/* Efecto de los enlaces */
 .nav-site__link:hover,
 .nav-site__link:focus,
 .nav-site__link--active {
@@ -92,6 +97,7 @@ img {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
+/* Opciones desplegables */
 .nav-site__dropdown-item {
   padding: 10px 20px;
   color: var(--color-dark);
@@ -102,7 +108,7 @@ img {
   background-color: #f2fafa;
 }
 
-
+/* Boton Join Now del menu */
 .nav-site__join {
   display: flex;
   align-items: center;
@@ -119,48 +125,17 @@ img {
   transition: background-color 0.3s;
 }
 
-
+/* Efecto del boton del menu */
 .nav-site__join:hover {
   background-color: #279eae;
   color: var(--color-white);
 }
 
+/* ===================================
+   SECCION PRINCIPAL
+=================================== */
 
-@media (max-width: 991.98px) {
-  .nav-site {
-    padding: 12px 0;
-  }
-
-  .nav-site__brand {
-    margin-left: 20px;
-    font-size: 28px;
-  }
-  
-  .nav-site__logo {
-    width: 32px;
-    height: 36px;
-  }
-
-
-  .nav-site__toggle {
-    margin-right: 20px;
-  }
-
-  .nav-site__list {
-    padding: 10px 20px;
-  }
-
-  .nav-site__link {
-    padding: 12px !important;
-  }
-
-  .nav-site__join {
-    width: 100%;
-    min-height: 55px;
-    margin-left: 0;
-  }
-}
-
+/* Imagen principal */
 .hero {
   position: relative;
   width: 100%;
@@ -172,7 +147,7 @@ img {
   background-repeat: no-repeat;
 }
 
-/* Capa oscura sobre la fotografia */
+/* Capa oscura */
 .hero__overlay {
   position: absolute;
   top: 0;
@@ -184,7 +159,6 @@ img {
   pointer-events: none;
 }
 
-
 /* Contenedor principal */
 .hero__container {
   position: relative;
@@ -193,13 +167,13 @@ img {
   padding: 0;
 }
 
-
+/* Fila de la seccion */
 .hero__row {
   height: 100%;
   margin: 0;
 }
 
-
+/* Columna de contenido */
 .hero__column {
   display: flex;
   align-items: center;
@@ -208,29 +182,17 @@ img {
   padding-right: 24px;
 }
 
+/* ===================================
+   TEXTOS PRINCIPALES
+=================================== */
 
-@media (max-width: 991.98px) {
-  .hero {
-    height: 600px;
-    background-position: 55% center;
-  }
-}
-
-
-@media (max-width: 575.98px) {
-  .hero {
-    min-height: 500px;
-    height: 500px;
-    background-position: 58% center;
-  }
-}
 /* Contenido principal */
 .hero__content {
   width: 100%;
   max-width: 750px;
 }
 
-/* Subtitulo principal */
+/* Subtitulo */
 .hero__subtitle {
   margin-bottom: 18px;
   color: var(--color-primary);
@@ -260,45 +222,9 @@ img {
   line-height: 1.55;
 }
 
-/* Textos para tabletas */
-@media (max-width: 991.98px) {
-  .hero__column {
-    padding-left: 6%;
-    padding-right: 6%;
-  }
-
-  .hero__title {
-    font-size: 52px;
-  }
-
-  .hero__description {
-    font-size: 19px;
-  }
-}
-
-/* Textos para celulares */
-@media (max-width: 575.98px) {
-  .hero__column {
-    padding-left: 24px;
-    padding-right: 20px;
-  }
-
-  .hero__subtitle {
-    margin-bottom: 12px;
-    font-size: 16px;
-  }
-
-  .hero__title {
-    font-size: 38px;
-    line-height: 1.15;
-  }
-
-  .hero__description {
-    margin-top: 16px;
-    font-size: 16px;
-    line-height: 1.5;
-  }
-}
+/* ===================================
+   BOTONES PRINCIPALES
+=================================== */
 
 /* Contenedor de botones */
 .hero__buttons {
@@ -309,7 +235,7 @@ img {
   margin-top: 36px;
 }
 
-/* Estilos generales de los botones */
+/* Estilos generales de botones */
 .hero__button {
   display: inline-flex;
   align-items: center;
@@ -333,7 +259,6 @@ img {
   color: var(--color-white);
 }
 
-/* Efecto del boton Read More */
 .hero__button--primary:hover {
   background-color: #279eae;
   color: var(--color-white);
@@ -345,20 +270,126 @@ img {
   color: var(--color-dark);
 }
 
-/* Efecto del boton Join Now */
 .hero__button--secondary:hover {
   background-color: var(--color-white);
   color: var(--color-primary);
 }
 
-/* Accesibilidad al navegar con teclado */
+/* Accesibilidad con teclado */
 .hero__button:focus-visible {
   outline: 3px solid var(--color-white);
   outline-offset: 4px;
 }
 
-/* Botones para tabletas */
+/* ===================================
+   FLECHAS DEL CARRUSEL - COMMIT 9
+=================================== */
+
+/* Contenedor de flechas */
+.hero__controls {
+  position: absolute;
+  top: 50%;
+  right: 8%;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  transform: translateY(-50%);
+}
+
+/* Estilos generales de flechas */
+.hero__arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  padding: 0;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 0;
+  background-color: transparent;
+  color: var(--color-white);
+  font-size: 24px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Efecto de las flechas */
+.hero__arrow:hover {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+/* Accesibilidad de las flechas */
+.hero__arrow:focus-visible {
+  outline: 3px solid var(--color-white);
+  outline-offset: 3px;
+}
+
+/* Posicion de la segunda diapositiva */
+.hero--alternate {
+  background-position: 65% center;
+}
+
+/* ===================================
+   RESPONSIVE - TABLETAS
+=================================== */
+
 @media (max-width: 991.98px) {
+  /* Navegacion */
+  .nav-site {
+    padding: 12px 0;
+  }
+
+  .nav-site__brand {
+    margin-left: 20px;
+    font-size: 28px;
+  }
+
+  .nav-site__logo {
+    width: 32px;
+    height: 36px;
+  }
+
+  .nav-site__toggle {
+    margin-right: 20px;
+  }
+
+  .nav-site__list {
+    padding: 10px 20px;
+  }
+
+  .nav-site__link {
+    padding: 12px !important;
+  }
+
+  .nav-site__join {
+    width: 100%;
+    min-height: 55px;
+    margin-left: 0;
+  }
+
+  /* Imagen principal */
+  .hero {
+    height: 600px;
+    background-position: 55% center;
+  }
+
+  /* Textos */
+  .hero__column {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+
+  .hero__title {
+    font-size: 52px;
+  }
+
+  .hero__description {
+    font-size: 19px;
+  }
+
+  /* Botones */
   .hero__buttons {
     gap: 16px;
     margin-top: 28px;
@@ -369,10 +400,52 @@ img {
     min-height: 58px;
     font-size: 16px;
   }
+
+  /* Flechas */
+  .hero__controls {
+    right: 20px;
+  }
+
+  .hero__arrow {
+    width: 45px;
+    height: 45px;
+  }
 }
 
-/* Botones para celulares */
+/* ===================================
+   RESPONSIVE - CELULARES
+=================================== */
+
 @media (max-width: 575.98px) {
+  /* Imagen principal */
+  .hero {
+    min-height: 500px;
+    height: auto;
+    background-position: 58% center;
+  }
+
+  .hero__column {
+    padding: 50px 24px 90px;
+  }
+
+  /* Textos */
+  .hero__subtitle {
+    margin-bottom: 12px;
+    font-size: 16px;
+  }
+
+  .hero__title {
+    font-size: 38px;
+    line-height: 1.15;
+  }
+
+  .hero__description {
+    margin-top: 16px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  /* Botones */
   .hero__buttons {
     flex-direction: column;
     align-items: stretch;
@@ -386,4 +459,25 @@ img {
     padding: 12px 20px;
     font-size: 15px;
   }
+
+  /* Flechas del carrusel */
+  .hero__controls {
+    top: auto;
+    right: 15px;
+    bottom: 15px;
+    flex-direction: row;
+    gap: 10px;
+    transform: none;
+  }
+
+  .hero__arrow {
+    width: 42px;
+    height: 42px;
+    font-size: 20px;
+  }
+
+  .hero--alternate {
+    background-position: 70% center;
+  }
 }
+

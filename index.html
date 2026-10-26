@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,35 +7,39 @@
     <meta name="author" content="Stiven Hernandez, Kevinn Cuervo">
     <meta name="keywords" content="eLearning, online courses, education, virtual learning">
     <meta name="description" content="eLEARNING - Online education and courses from your home">
-    
     <title>eLEARNING | Home</title>
 
-  
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Tipografia Nunito -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Estilos personalizados -->
     <link rel="stylesheet" href="styles.css">
   </head>
 
-  </head>
   <body>
+    <!-- Barra de navegacion -->
     <header>
       <nav class="navbar navbar-expand-lg nav-site">
         <div class="container-fluid nav-site__container">
 
-          
-          
+          <!-- Logotipo -->
           <a class="navbar-brand nav-site__brand" href="#inicio">
             <img
               class="nav-site__logo"
               src="Imagen/logo.svg"
               alt="Logo de eLEARNING"
+              width="38"
+              height="42"
             >
             <span class="nav-site__brand-text">eLEARNING</span>
           </a>
 
+          <!-- Boton de menu para celulares -->
           <button
             class="navbar-toggler nav-site__toggle"
             type="button"
@@ -47,12 +52,16 @@
             <span class="navbar-toggler-icon"></span>
           </button>
 
-          
+          <!-- Opciones de navegacion -->
           <div class="collapse navbar-collapse nav-site__collapse" id="menuPrincipal">
             <ul class="navbar-nav ms-auto nav-site__list">
 
               <li class="nav-item">
-                <a class="nav-link nav-site__link nav-site__link--active" href="#inicio" aria-current="page">
+                <a
+                  class="nav-link nav-site__link nav-site__link--active"
+                  href="#inicio"
+                  aria-current="page"
+                >
                   HOME
                 </a>
               </li>
@@ -99,54 +108,52 @@
                   CONTACT
                 </a>
               </li>
+
             </ul>
 
-            
+            <!-- Boton de registro -->
             <a class="nav-site__join" href="#registro">
               Join Now
-              <span aria-hidden="true">➜</span>
+              <span aria-hidden="true">&rarr;</span>
             </a>
           </div>
         </div>
       </nav>
     </header>
 
-
+    <!-- Contenido principal -->
     <main id="inicio">
 
-
-      
+      <!-- Seccion principal -->
       <section class="hero" aria-label="Portada de cursos en linea">
 
-        
+        <!-- Capa oscura sobre la imagen -->
         <div class="hero__overlay" aria-hidden="true"></div>
 
         <div class="container-fluid hero__container">
-
           <div class="row hero__row">
             <div class="col-12 col-lg-9 hero__column">
 
-              
+              <!-- Contenido principal -->
               <div class="hero__content">
 
-                
+                <!-- Subtitulo -->
                 <p class="hero__subtitle">
                   BEST ONLINE COURSES
                 </p>
 
-                
+                <!-- Titulo principal -->
                 <h1 class="hero__title">
                   Get Educated Online From Your Home
                 </h1>
 
-                
+                <!-- Descripcion -->
                 <p class="hero__description">
                   Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no.
                   Kasd rebum ipsum et diam justo clita et kasd rebum sea sanctus
                   eirmod elitr.
                 </p>
-              
-              
+
                 <!-- Botones principales -->
                 <div class="hero__buttons">
                   <a class="hero__button hero__button--primary" href="#courses">
@@ -162,10 +169,38 @@
             </div>
           </div>
         </div>
-      </section>
 
+        <!-- Flechas de navegacion -->
+        <div class="hero__controls">
+
+          <!-- Flecha anterior -->
+          <button
+            class="hero__arrow hero__arrow--previous"
+            id="previousSlide"
+            type="button"
+            aria-label="Diapositiva anterior"
+          >
+            <span aria-hidden="true">&#10094;</span>
+          </button>
+
+          <!-- Flecha siguiente -->
+          <button
+            class="hero__arrow hero__arrow--next"
+            id="nextSlide"
+            type="button"
+            aria-label="Diapositiva siguiente"
+          >
+            <span aria-hidden="true">&#10095;</span>
+          </button>
+
+        </div>
+      </section>
     </main>
-     
+
+    <!-- Bootstrap JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScript personalizado -->
+    <script src="script.js"></script>
   </body>
 </html>
