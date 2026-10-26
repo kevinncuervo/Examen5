@@ -537,3 +537,187 @@ img {
     font-size: 22px;
   }
 }
+
+/* ===================================
+   AJUSTES RESPONSIVE - COMMIT 11
+=================================== */
+
+/* Computadores medianos */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .nav-site__brand {
+    margin-left: 15px;
+    font-size: 29px;
+  }
+
+  .nav-site__link {
+    padding: 29px 10px !important;
+    font-size: 14px;
+  }
+
+  .nav-site__join {
+    width: 180px;
+    margin-left: 10px;
+  }
+
+  .hero__title {
+    font-size: 56px;
+  }
+
+  .hero__description {
+    font-size: 18px;
+  }
+}
+
+/* Adaptacion para tabletas */
+@media (min-width: 576px) and (max-width: 991.98px) {
+  .hero {
+    min-height: 640px;
+    height: auto;
+    background-position: 58% center;
+  }
+
+  .hero__container,
+  .hero__row {
+    min-height: 640px;
+    height: auto;
+  }
+
+  .hero__column {
+    min-height: 640px;
+    height: auto;
+    padding: 70px 90px 70px 6%;
+  }
+
+  .hero__title {
+    font-size: clamp(36px, 5.2vw, 50px);
+  }
+
+  .hero__description {
+    font-size: clamp(16px, 2vw, 19px);
+  }
+
+  .hero__buttons {
+    gap: 15px;
+  }
+
+  .hero__controls {
+    right: 18px;
+  }
+
+  .hero--alternate {
+    background-position: 65% center;
+  }
+}
+
+/* Adaptacion para celulares */
+@media (max-width: 575.98px) {
+  /* Logotipo y navegacion */
+  .nav-site__brand {
+    gap: 8px;
+    margin-left: 12px;
+    font-size: clamp(20px, 5vw, 26px);
+  }
+
+  .nav-site__logo {
+    width: 28px;
+    height: 32px;
+  }
+
+  .nav-site__toggle {
+    margin-right: 12px;
+  }
+
+  .nav-site__link {
+    font-size: 14px;
+  }
+
+  /* Seccion principal */
+  .hero {
+    min-height: 0;
+    height: auto;
+    background-position: 62% center;
+  }
+
+  .hero__container,
+  .hero__row {
+    height: auto;
+  }
+
+  .hero__column {
+    min-height: 0;
+    height: auto;
+    padding: 54px 22px 108px;
+  }
+
+  /* Textos */
+  .hero__content {
+    max-width: 100%;
+  }
+
+  .hero__subtitle {
+    font-size: 15px;
+  }
+
+  .hero__title {
+    font-size: clamp(30px, 8vw, 38px);
+    line-height: 1.15;
+  }
+
+  .hero__description {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  /* Botones principales */
+  .hero__buttons {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+    margin-top: 22px;
+  }
+
+  .hero__button {
+    width: 100%;
+    min-height: 50px;
+  }
+
+  /* Flechas de navegacion */
+  .hero__controls {
+    top: auto;
+    right: 16px;
+    bottom: 17px;
+    flex-direction: row;
+    transform: none;
+  }
+
+  .hero--alternate {
+    background-position: 70% center;
+  }
+
+  /* Boton volver arriba */
+  .back-to-top {
+    right: 15px;
+    bottom: 80px;
+    width: 42px;
+    height: 42px;
+  }
+}
+
+/* Celulares muy pequenos */
+@media (max-width: 359.98px) {
+  .hero__column {
+    padding: 40px 18px 100px;
+  }
+
+  .hero__title {
+    font-size: 30px;
+  }
+
+  .hero__description {
+    font-size: 14px;
+  }
+
+  .hero__button {
+    font-size: 14px;
+  }
+}

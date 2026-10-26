@@ -62,7 +62,8 @@ document.addEventListener("DOMContentLoaded", () => {
     // Boton siguiente
     nextButton.addEventListener("click", () => {
       showSlide(currentSlide + 1);
-    
+    });
+
   }
 
   // Boton para volver al inicio
